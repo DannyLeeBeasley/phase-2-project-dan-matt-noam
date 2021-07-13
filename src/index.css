@@ -1,13 +1,73 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text-wrap {
+  word-wrap: break-word;
+}
+
+.bot-army {
+  overflow-x: scroll;
+  min-height: 300px;
+  max-width: 100%;
+}
+
+.ui.grid > .row.bot-army-row {
+  flex-wrap: nowrap;
+  min-height: 100%;
+}
+
+.ui.grid {
+  padding: 0px 20px;
+}
+
+/* .card {
+  width: 75%;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid black;
+} */
+
+.card {
+  text-align: center;
+  border: grey solid 1px;
+  width: 15rem;
+  height: 20rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px #353333;
+  background-image: url(https://images.unsplash.com/photo-1586074299757-dc655f18518c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80);
+}
+
+.column {
+  float: left;
+  /* width: 25%; */
+  padding: 20px;
+}
+
+h1 {
+
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+.ingredients {
+  background-image: url(https://t4.ftcdn.net/jpg/03/72/40/79/360_F_372407956_s95KSoCrX3tDKjC41i9IYbg7Aba0juES.jpg);
+  background-size: 1500px;
+}
+
+.your-ingredients {
+  background-image: url(https://envato-shoebox-0.imgix.net/9224/81d8-0d33-4497-b2d7-98c733fdeea9/DSC_6985.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=d9a36ed963dd0738dc5f7534d08f5b66);
+  background-position: center;
+  background-size: 60pc;
+  background-position: bottom;
+}
+
+h2 {
+  font-size: large;
 }
