@@ -17,10 +17,14 @@ body {
 .ui.grid > .row.ingredient-list-row {
   flex-wrap: nowrap;
   min-height: 100%;
+  text-align: center;
+
 }
 
 .ui.grid {
   padding: 0px 20px;
+  text-align: center;
+
 }
 
 /* .card {
@@ -35,8 +39,10 @@ body {
   /* background-image: url(https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80); */
   text-align: center;
   border: grey solid 1px;
-  width: 15rem;
-  height: 20rem;
+  width: 360px;
+  height: 360px;
+  background: white;
+  border-radius: 50%;
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px #353333;
@@ -58,6 +64,14 @@ h1 {
   
 }
 
+.make-smoothie {
+  font-size: x-large;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* .ingredients {
   background-image: url(https://cdn.wallpapersafari.com/27/46/fjYJsI.jpg);
   background-size: 1700px;
@@ -74,6 +88,7 @@ h1 {
 
 h2 {
   font-size: large;
+  margin-top: 20px;
 }
 
 button {
@@ -95,10 +110,9 @@ button {
  
 .box {
   position: relative;
-  width: 50pc;
+  width: 850px;
   margin: 0 auto;
-  height: 60pc;
-  max-height: 63vh;
+  height: 650px;
   margin-top: calc(100vh - 85vh - 20px);
   background: #fff;
   border-radius: 4px;
@@ -124,15 +138,13 @@ button {
 }
 
 .making-smoothie {
-  height: auto;
-  width: auto;
+  width: 800px;
+  height: 600px;
 }
 
 .Filter {
   font-size: xx-large;
 }
-
-
 
 
 body {
@@ -180,4 +192,85 @@ body {
 img {
   height: 25mm;
   width: 25mm
+}
+
+#about {
+  background-color: lightblue;
+  height: 300px;
+  text-align: center;
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1em;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: rgb(44, 44, 44);
+  border-bottom: 2px solid rgb(44, 44, 44);
+  transition: 0.1s;
+}
+
+nav a:hover,
+nav a:active {
+  color: rgb(34, 34, 34);
+  border-bottom: 2px solid rgb(34, 34, 34);
+}
+
+#home,
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 50vh;
+  min-height: 400px;
+  padding: 1rem;
+}
+
+#home {
+  background-color: rgb(26, 26, 26);
+}
+
+#about img {
+  max-height: 50%;
+}
+
+
+select {
+  font-size: x-large;
+  align-items: center;
 }

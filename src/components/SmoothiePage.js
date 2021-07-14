@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import YourSmoothie from "./YourSmoothie";
 import IngredientList from "./IngredientList";
+import About from "./About"
+import NavBar from "./NavBar";
 
 function SmoothiePage() {
   const [ingredients, setIngredients] = useState([])
@@ -31,8 +33,10 @@ function SmoothiePage() {
 
   return (
     <div>
+      <NavBar />
       <YourSmoothie ingredients={myIngredients} handleClick={removeIngredient}/>
       <IngredientList ingredients={ingredients} handleClick={getIngredient} />
+      <About />
     </div>
   )
 }

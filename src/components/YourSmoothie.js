@@ -9,26 +9,39 @@ function YourSmoothie({ingredients, handleClick}) {
     setIsOpen(!isOpen);
   }
 
+  let audio = new Audio("./Images/blender.mp3")
+
+  const start = () => {
+    audio.play()
+  }
+
   return (
     <div className="your-ingredients">
+              <h1>Make a Smoothie!</h1>
+
     <div className="ui segment inverted olive ingredient-list">
       <div className="ui five column grid">
         <div className="row ingredient-list-row">
             
-        <h1>Make a Smoothie!</h1>
           {
             ingredients.map(ingredient => (
               <IngredientCard key={ingredient.id} ingredient={ingredient} handleClick={handleClick}/>
             ))
           }
-          </div>
-        </div>
-      </div>
+    
       <div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+
     <input
       type="button"
       value="Make My Smoothie!"
-      style={{position: "center"}}
+      className="make-smoothie"
+      style={{textAlign: "center"}}
+      onFocus={start}
       onClick={togglePopup}
     />
     {isOpen && <Popup
@@ -37,7 +50,7 @@ function YourSmoothie({ingredients, handleClick}) {
       </>}
       handleClose={togglePopup}
     />}
-  </div>
+          
     </div>
   );
 }
