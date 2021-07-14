@@ -5,9 +5,9 @@ function IngredientList({ingredients, handleClick}) {
 
   return (
  <div className="ingredients">
-       <div className="ui segment inverted olive bot-army">
+       <div className="ui segment ingredient-list">
             <div className="ui five column grid">
-                <div className="row bot-army-row"></div>
+                <div className="row ingredient-list-row"></div>
                 
                     
       

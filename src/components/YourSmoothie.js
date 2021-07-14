@@ -11,9 +11,9 @@ function YourSmoothie({ingredients, handleClick}) {
 
   return (
     <div className="your-ingredients">
-    <div className="ui segment inverted olive bot-army">
+    <div className="ui segment inverted olive ingredient-list">
       <div className="ui five column grid">
-        <div className="row bot-army-row">
+        <div className="row ingredient-list-row">
             
         <h1>Make a Smoothie!</h1>
           {

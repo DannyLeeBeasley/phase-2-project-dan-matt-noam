@@ -19,23 +19,6 @@ function SmoothiePage() {
     setMyIngredients(myIngredientList)
   }
 
-//   const deleteBot = (bot) => {
-//     const newBotList = [...bots].filter((dbot) => dbot.id !== bot.id)
-//     setBots(newBotList)
-//   }
-
-// const deleteBot = (bot) => {
-//   const removeBot = {
-//     method: 'DELETE'
-//   };
-//   fetch(`http://localhost:8002/bots/${bot.id}`, removeBot).then((response) => {
-//     return response.json();
-//   }).then(() => {
-//   const newBotList = [...bots].filter((dbot) => dbot.id !== bot.id)
-//   setBots(newBotList)
-//   });
-// }
-
   useEffect(() => {
     fetch("http://localhost:3000/ingredients")
       .then((resp) => resp.json())
