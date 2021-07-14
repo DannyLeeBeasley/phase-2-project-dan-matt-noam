@@ -1,8 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import IngredientCard from "./IngredientCard";
+import Popup from './Popup';
 
 function YourSmoothie({ingredients, handleClick}) {
-  //your bot army code here...
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
 
   return (
     <div className="your-ingredients">
@@ -19,6 +24,20 @@ function YourSmoothie({ingredients, handleClick}) {
           </div>
         </div>
       </div>
+      <div>
+    <input
+      type="button"
+      value="Make My Smoothie!"
+      style={{position: "center"}}
+      onClick={togglePopup}
+    />
+    {isOpen && <Popup
+      content={<>
+        <img className="making-smoothie" src="https://i.pinimg.com/originals/69/07/89/6907897ea5a182a980f9eb9d818ecd56.gif" loop={false}/>
+      </>}
+      handleClose={togglePopup}
+    />}
+  </div>
     </div>
   );
 }

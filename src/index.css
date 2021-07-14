@@ -32,6 +32,7 @@ body {
 } */
 
 .card {
+  background-image: url(https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
   text-align: center;
   border: grey solid 1px;
   width: 15rem;
@@ -39,8 +40,9 @@ body {
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px #353333;
-  background-image: url(https://images.unsplash.com/photo-1586074299757-dc655f18518c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80);
+  background-color: lavender;
 }
+
 
 .column {
   float: left;
@@ -56,10 +58,12 @@ h1 {
   
 }
 
-.ingredients {
-  background-image: url(https://t4.ftcdn.net/jpg/03/72/40/79/360_F_372407956_s95KSoCrX3tDKjC41i9IYbg7Aba0juES.jpg);
-  background-size: 1500px;
-}
+/* .ingredients {
+  background-image: url(https://cdn.wallpapersafari.com/27/46/fjYJsI.jpg);
+  background-size: 1700px;
+  background-position: center;
+  background-position: top;
+} */
 
 .your-ingredients {
   background-image: url(https://envato-shoebox-0.imgix.net/9224/81d8-0d33-4497-b2d7-98c733fdeea9/DSC_6985.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=d9a36ed963dd0738dc5f7534d08f5b66);
@@ -70,4 +74,98 @@ h1 {
 
 h2 {
   font-size: large;
+}
+
+button {
+  align-items: center;
+  font-size: larger;
+}
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  /* background-image: url(https://i.pinimg.com/originals/69/07/89/6907897ea5a182a980f9eb9d818ecd56.gif); */
+
+}
+ 
+.box {
+  position: relative;
+  width: 50pc;
+  margin: 0 auto;
+  height: 60pc;
+  max-height: 63vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+ 
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  /* right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px); */
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+
+
+
+
+
+body {
+  background-color: #434752;
+  background-image: linear-gradient(to right, #434752, #2a2d35, #2a2d35);
+}
+
+#shelf {
+  width: 400px;
+  height: 71px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.top {
+  width: 336px;
+  height: 100px;
+  background: 7px 0 url(http://us.123rf.com/400wm/400/400/mettus/mettus1002/mettus100200138/6476266-motif-de-la-planche-de-bois-obsolete.jpg);
+  background-size: 88%;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  transform: perspective(300px) rotateX(75deg);
+  box-shadow: inset 0 40px 130px -20px #16120d;
+}
+
+.front {
+  width: 400px;
+  height: 6px;
+  background: url(http://us.123rf.com/400wm/400/400/mettus/mettus1002/mettus100200138/6476266-motif-de-la-planche-de-bois-obsolete.jpg);
+  position: absolute;
+  bottom: 0;
+  box-shadow: inset 0 1px 1px 0 #776959, inset 0 -2px 20px -2px #16120D;
+}
+
+.shadow {
+  width: 395px;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  box-shadow: 0 10px 20px -2px black;
 }
