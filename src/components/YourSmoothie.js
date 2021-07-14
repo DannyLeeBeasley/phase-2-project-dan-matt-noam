@@ -33,7 +33,7 @@ function YourSmoothie({ingredients, handleClick}) {
     />
     {isOpen && <Popup
       content={<>
-        <img className="making-smoothie" src="https://i.pinimg.com/originals/69/07/89/6907897ea5a182a980f9eb9d818ecd56.gif" loop={false}/>
+        <img className="making-smoothie" src="./Images/smoothie.gif" loop={false}/>
       </>}
       handleClose={togglePopup}
     />}

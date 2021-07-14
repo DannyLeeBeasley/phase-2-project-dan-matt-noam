@@ -6,6 +6,7 @@ function IngredientCard({ ingredient, handleClick}) {
       <div
         className="ui card"
         key={ingredient.id}
+        // style={{backgroundImage: ingredient.image}}
         onClick={() => handleClick(ingredient)}
       >
             <div className="header">
