@@ -17,11 +17,11 @@ function YourSmoothie({ingredients, handleClick}) {
 
   return (
     <div className="your-ingredients">
-              <h1>Make a Smoothie!</h1>
 
     <div className="ui segment inverted olive ingredient-list">
       <div className="ui five column grid">
         <div className="row ingredient-list-row">
+          <h1>My Ingredients:</h1>
             
           {
             ingredients.map(ingredient => (
@@ -33,8 +33,8 @@ function YourSmoothie({ingredients, handleClick}) {
       </div>
       </div>
       </div>
+     
       </div>
-
 
     <input
       type="button"
@@ -51,6 +51,7 @@ function YourSmoothie({ingredients, handleClick}) {
       handleClose={togglePopup}
     />}
           
+      
     </div>
   );
 }

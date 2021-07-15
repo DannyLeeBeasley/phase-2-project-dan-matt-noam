@@ -17,14 +17,16 @@ function IngredientList({ingredients, handleClick}) {
 
   return (
     <div>
+       <div className="ingredients">
+       <div className="ui segment ingredient-list">
+            <div className="ui five column grid">
+                <div className="row ingredient-list-row"></div>
+
    <h1>Choose Your Ingredients</h1>
 
     <Filter onCategoryChange={handleCategoryChange}/>
 
- <div className="ingredients">
-       <div className="ui segment ingredient-list">
-            <div className="ui five column grid">
-                <div className="row ingredient-list-row"></div>
+    
                 
                     
       

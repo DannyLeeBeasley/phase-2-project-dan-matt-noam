@@ -12,18 +12,47 @@ body {
   overflow-x: scroll;
   min-height: 300px;
   max-width: 100%;
+  /* background-image: url(https://i.pinimg.com/originals/17/aa/a7/17aaa7fced8645ddfdd73ddee8fa6267.jpg); */
+  background-size: 100%;
+  background-position: center;
+  /* background-image: linear-gradient(rgb(223, 223, 179), maroon); */
+}
+
+header {
+    overflow-x: scroll;
+    min-height: 230px;
+    max-width: 100%;
+    text-align: left;
+    align-content: flex-end;
+    background-size: 100%;
+    background-image: url(https://www.dole.com/-/media/project/dole/article-images/seven-superfood-smoothies-to-put-in-your-blender--web.jpg?h=460&w=1338&rev=aec5c9b6577741feb3e97918badd0e63&hash=D46206D87219BBE11FB94C4E25CD9F28) ;
+    background-position: top;
+    
+}
+
+h6 {
+  margin-top: 50px;
+  color: #378a78; 
+  font-family: 'Rouge Script', cursive; 
+  font-size: 90px; 
+  font-weight: normal; 
+  line-height: 100px; 
+  text-shadow: 1px 1px 2px #082b34;
 }
 
 .ui.grid > .row.ingredient-list-row {
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   min-height: 100%;
   text-align: center;
+  align-items: center;
 
 }
 
 .ui.grid {
   padding: 0px 20px;
   text-align: center;
+  align-items: center;
+
 
 }
 
@@ -56,12 +85,28 @@ body {
   padding: 20px;
 }
 
-h1 {
+/* h1 {
+  border-style: solid;
+  border: lightblue;
 
   font-size: xx-large;
   text-align: center;
   margin-bottom: 30px;
+  color: #065223;
+  margin-top: 10px;
   
+} */
+
+h1 
+{ 
+  color: #CEF0D4; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 60px; 
+  font-weight: normal; 
+  line-height: 100px; 
+  /* margin-top: 50px;  */
+  text-align: center; 
+  text-shadow: 1px 1px 2px #082b34; 
 }
 
 .make-smoothie {
@@ -80,10 +125,12 @@ h1 {
 } */
 
 .your-ingredients {
-  background-image: url(https://envato-shoebox-0.imgix.net/9224/81d8-0d33-4497-b2d7-98c733fdeea9/DSC_6985.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=d9a36ed963dd0738dc5f7534d08f5b66);
-  background-position: center;
-  background-size: 60pc;
-  background-position: bottom;
+  /* background-image: url(https://img.freepik.com/free-photo/colorful-fruit-smoothies-composition-wooden-background_23-2148227532.jpg?size=626&ext=jpg); */
+  background-size: 100%;
+  min-height: 100mm;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgb(163, 202, 233), rgb(223, 223, 179));
 }
 
 h2 {
@@ -147,7 +194,7 @@ button {
 }
 
 
-body {
+/* body {
   background-color: #434752;
   background-image: linear-gradient(to right, #434752, #2a2d35, #2a2d35);
 }
@@ -187,7 +234,7 @@ body {
   bottom: 0;
   left: 5px;
   box-shadow: 0 10px 20px -2px black;
-}
+} */
 
 img {
   height: 25mm;
@@ -215,7 +262,7 @@ body {
   font-size: 16px;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -223,7 +270,7 @@ h5,
 h6 {
   font-family: "Playfair Display", serif;
   margin-bottom: 1em;
-}
+} */
 
 nav {
   position: fixed;
@@ -259,6 +306,7 @@ nav a:active {
   height: 50vh;
   min-height: 400px;
   padding: 1rem;
+  background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/11/smooth-02.jpg);
 }
 
 #home {

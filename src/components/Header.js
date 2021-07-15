@@ -2,7 +2,9 @@ import React from 'react';
 
 function Header() {
     return(
-        <header>Build Your Own Smoothie Bar</header>
+        <header>        
+            <h6>SMOOTH(e)</h6>
+        </header>
     );
 }
 

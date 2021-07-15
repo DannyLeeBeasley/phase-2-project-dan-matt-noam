@@ -3,6 +3,7 @@ import YourSmoothie from "./YourSmoothie";
 import IngredientList from "./IngredientList";
 import About from "./About"
 import NavBar from "./NavBar";
+import Header from "./Header";
 
 function SmoothiePage() {
   const [ingredients, setIngredients] = useState([])
@@ -34,6 +35,7 @@ function SmoothiePage() {
   return (
     <div>
       <NavBar />
+      <Header />
       <YourSmoothie ingredients={myIngredients} handleClick={removeIngredient}/>
       <IngredientList ingredients={ingredients} handleClick={getIngredient} />
       <About />
