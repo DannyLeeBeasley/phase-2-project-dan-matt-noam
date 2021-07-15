@@ -3,21 +3,18 @@ import React from "react";
 // import IngredientList from "./IngredientList";
 // import About from "./About";
 
+import { Link } from 'react-router-dom';
+
+
 function NavBar() {
-    function navigate(e) {
-        // don't make a GET request
-        e.preventDefault();
-        // use pushState to navigate using the href attribute of the <a> tag
-        window.history.pushState(null, "", e.target.href);
-      }
+   
   return (
     <nav>
-      <a href="/YourSmoothie" onClick={navigate}>Your Smoothie</a>
-      <a href="/IngredientList" onClick={navigate}>Ingredients</a>
-      <a href="/About" onClick={navigate}>About</a>
-
+      <Link to="/yoursmoothie">Your Smoothie</Link>
+      <Link to="/ingredientlist">Your Ingredients </Link>
+      <Link to="/about">About </Link>
     </nav>
   );
 }
 
-export default NavBar
+export default NavBar;

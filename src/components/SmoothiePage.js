@@ -4,6 +4,7 @@ import IngredientList from "./IngredientList";
 import About from "./About"
 import NavBar from "./NavBar";
 import Header from "./Header";
+import { Route, Switch } from 'react-router-dom';
 
 function SmoothiePage() {
   const [ingredients, setIngredients] = useState([])
@@ -33,13 +34,20 @@ function SmoothiePage() {
 
 
   return (
-    <div>
+    <div>   
       <NavBar />
       <Header />
-      <YourSmoothie ingredients={myIngredients} handleClick={removeIngredient}/>
-      <IngredientList ingredients={ingredients} handleClick={getIngredient} />
-      <About />
-    </div>
+      <Switch>
+      <Route exact path="/yoursmoothie" component={
+        () => <YourSmoothie ingredients={myIngredients} handleClick={removeIngredient}/>}/>
+    <Route exact path="/ingredientlist" component={
+        () => <IngredientList ingredients={ingredients} handleClick={getIngredient} />}/>
+     <Route exact path ="/about" component={
+       () => <About/>}/>
+       </Switch>
+     </div> 
+     
+   
   )
 }
 
