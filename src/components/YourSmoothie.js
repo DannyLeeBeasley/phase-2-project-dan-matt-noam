@@ -65,9 +65,8 @@ function YourSmoothie({ingredients, handleClick}) {
     />
     {isOpen && <Popup
       content={<>
-        {/* <h5>Check Out Your Smooth(e) Below!</h5> */}
         <img className="making-smoothie" src="./Images/smoothie.gif" loop={false}/>
-        <h5>Your Smooth(e):</h5>
+        <h4>Your Smooth(e):</h4>
         <h2>Price: ${totalPrice}</h2>
         <h2>Calories: {totalCalories} Calories</h2>
         <h2>Protein: {totalProtein}g of Protein</h2>

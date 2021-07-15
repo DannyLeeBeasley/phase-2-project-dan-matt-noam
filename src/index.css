@@ -13,12 +13,13 @@ body {
   min-height: 300px;
   max-width: 100%;
   background-size: 100%;
+  
 }
 
-/* .yours {
+.yours {
   align-items: center;
-  margin-left: 475px;
-} */
+  margin-right: 1468px;
+}
 
 h5{
   margin-left: 5mm;
@@ -27,6 +28,14 @@ h5{
   font-size: xx-large;
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   color: #082b34;
+  margin-right: 380mm;
+}
+
+h4{
+  font-style: bold;
+  font-size: xx-large;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  color: #52CEC8
 }
 
 p {
@@ -51,6 +60,7 @@ header {
     background-image: url(https://www.dole.com/-/media/project/dole/article-images/seven-superfood-smoothies-to-put-in-your-blender--web.jpg?h=460&w=1338&rev=aec5c9b6577741feb3e97918badd0e63&hash=D46206D87219BBE11FB94C4E25CD9F28) ;
     background-position: top;
     margin-top: 0mm;
+    border-bottom: 10px solid #082b34;
 }
 
 .smoothies{
@@ -126,6 +136,8 @@ h1
   background-size: 100%;
   min-height: 100mm;
   background-image: linear-gradient(#DAE2ED, #ACD8F1);
+  border-bottom: 10px solid #082b34;
+
 }
 
 h2 {
@@ -188,13 +200,14 @@ small {
   margin: 0 auto;
   height: 575px;
   margin-top: calc(100vh - 85vh - 20px);
-  background: #fff;
+  background: #263221;
   border-radius: 4px;
   padding: 20px;
   border: 1px solid #999;
   overflow: auto;
   align-items: center;
   text-align: center;
+  color: #52CEC8;
 }
  
 .close-icon {
