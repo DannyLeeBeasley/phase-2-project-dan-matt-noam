@@ -9,7 +9,7 @@ function Header() {
        
             <h6>SMOOTH(e)</h6>
             {/* </div>  */}
-            <h5>Welcomem to SMOOTH(e)!</h5>
+            <h5>Welcome to SMOOTH(e)!</h5>
             <br></br>
             <h5>The Smart Way to Build Your Smoothie!</h5>
             {/* <p>Click on ingredients in the ingredients list below to add them to your smoothie.</p>
