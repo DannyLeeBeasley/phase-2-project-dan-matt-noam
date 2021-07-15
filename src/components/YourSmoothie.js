@@ -21,7 +21,7 @@ function YourSmoothie({ingredients, handleClick}) {
     <div className="ui segment inverted olive ingredient-list">
       <div className="ui five column grid">
         <div className="row ingredient-list-row">
-          <h1>My Ingredients:</h1>
+          <h1>My Smooth(e):</h1>
             
           {
             ingredients.map(ingredient => (
@@ -33,7 +33,6 @@ function YourSmoothie({ingredients, handleClick}) {
       </div>
       </div>
       </div>
-     
       </div>
 
     <input

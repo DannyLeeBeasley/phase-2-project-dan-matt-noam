@@ -12,24 +12,47 @@ body {
   overflow-x: scroll;
   min-height: 300px;
   max-width: 100%;
-  /* background-image: url(https://i.pinimg.com/originals/17/aa/a7/17aaa7fced8645ddfdd73ddee8fa6267.jpg); */
   background-size: 100%;
-  background-position: center;
-  /* background-image: linear-gradient(rgb(223, 223, 179), maroon); */
+
+}
+
+h5{
+  margin-left: 5mm;
+  margin-right: 250mm;
+  font-style: bold;
+  font-size: xx-large;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  color: #082b34;
+}
+
+p {
+  margin-left: 5mm;
+  /* margin-right: 250mm; */
+  font-style: normal;
+  margin-bottom: 2mm;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  padding-right: 250mm;
+
 }
 
 header {
     overflow-x: scroll;
-    min-height: 230px;
+    min-height: 430px;
+    max-height: 430px;
     max-width: 100%;
+    min-width: 100%;
     text-align: left;
     align-content: flex-end;
     background-size: 100%;
     background-image: url(https://www.dole.com/-/media/project/dole/article-images/seven-superfood-smoothies-to-put-in-your-blender--web.jpg?h=460&w=1338&rev=aec5c9b6577741feb3e97918badd0e63&hash=D46206D87219BBE11FB94C4E25CD9F28) ;
     background-position: top;
-    
+    margin-top: 0mm;
 }
 
+.smoothies{
+  height: 540px;
+  width: 1300px;
+}
 h6 {
   margin-top: 50px;
   color: #378a78; 
@@ -40,32 +63,15 @@ h6 {
   text-shadow: 1px 1px 2px #082b34;
 }
 
-.ui.grid > .row.ingredient-list-row {
-  /* flex-wrap: nowrap; */
-  min-height: 100%;
-  text-align: center;
-  align-items: center;
-
-}
 
 .ui.grid {
   padding: 0px 20px;
   text-align: center;
   align-items: center;
-
-
 }
 
-/* .card {
-  width: 75%;
-  margin: 10px;
-  padding: 30px;
-  text-align: center;
-  border: 2px solid black;
-} */
 
 .card {
-  /* background-image: url(https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80); */
   text-align: center;
   border: grey solid 1px;
   width: 360px;
@@ -74,9 +80,17 @@ h6 {
   border-radius: 50%;
   display: inline-grid;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px #353333;
+  box-shadow: 10px 12px #353333;
   background-color: rgb(255, 255, 255);
 }
+
+.card:hover {
+  background-color: #00838d;
+  color: #DAE2ED;
+ 
+}
+
+
 
 
 .column {
@@ -85,27 +99,13 @@ h6 {
   padding: 20px;
 }
 
-/* h1 {
-  border-style: solid;
-  border: lightblue;
-
-  font-size: xx-large;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #065223;
-  margin-top: 10px;
-  
-} */
-
 h1 
 { 
-  color: #CEF0D4; 
+  color: #467c50; 
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 60px; 
   font-weight: normal; 
   line-height: 100px; 
-  /* margin-top: 50px;  */
-  text-align: center; 
   text-shadow: 1px 1px 2px #082b34; 
 }
 
@@ -117,20 +117,14 @@ h1
   align-items: center;
 }
 
-/* .ingredients {
-  background-image: url(https://cdn.wallpapersafari.com/27/46/fjYJsI.jpg);
-  background-size: 1700px;
-  background-position: center;
-  background-position: top;
-} */
+.ingredients {
+ background-image: linear-gradient(#ACD8F1, #83c7b6);
+}
 
 .your-ingredients {
-  /* background-image: url(https://img.freepik.com/free-photo/colorful-fruit-smoothies-composition-wooden-background_23-2148227532.jpg?size=626&ext=jpg); */
   background-size: 100%;
   min-height: 100mm;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgb(163, 202, 233), rgb(223, 223, 179));
+  background-image: linear-gradient(#DAE2ED, #ACD8F1);
 }
 
 h2 {
@@ -151,8 +145,6 @@ button {
   height: 100vh;
   top: 0;
   left: 0;
-  /* background-image: url(https://i.pinimg.com/originals/69/07/89/6907897ea5a182a980f9eb9d818ecd56.gif); */
-
 }
  
 .box {
@@ -247,10 +239,6 @@ img {
   text-align: center;
 }
 
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -292,8 +280,8 @@ nav a {
 
 nav a:hover,
 nav a:active {
-  color: rgb(34, 34, 34);
-  border-bottom: 2px solid rgb(34, 34, 34);
+  color: rgb(105, 105, 105);
+  border-bottom: 2px solid rgb(105, 105, 105);
 }
 
 #home,
