@@ -15,6 +15,12 @@ function IngredientList({ingredients, handleClick}) {
     return ingredient.category === selectedCategory;
   });
 
+
+  // const selectAll = () => {
+  //   const all = [...myIngredients, itemsToDisplay]
+  //   setMyIngredients(all)
+  // }
+
   return (
     <div>
        <div className="ingredients">
@@ -26,9 +32,7 @@ function IngredientList({ingredients, handleClick}) {
 
     <Filter onCategoryChange={handleCategoryChange}/>
 
-    
-                
-                    
+    {/* <button className="selectAll" onClick={selectAll}>Select All</button> */}
       
         {
           itemsToDisplay.map(ingredient => (

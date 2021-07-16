@@ -30,6 +30,18 @@ function YourSmoothie({ingredients, handleClick}) {
   var totalFat = ingredients.reduce(function(prev, cur) {
     return prev + cur.fat;
   }, 0);
+  
+  var totalNames = ingredients.reduce(function(prev, cur) {
+    return prev + cur.name + '. ';
+  }, []);
+
+  // var totalVitamins = ingredients.reduce(function(prev, cur) {
+  //   return prev + cur.vitamins + ' ';
+  // }, []);
+
+  // var totalMinerals = ingredients.reduce(function(prev, cur) {
+  //   return prev + cur.minerals + ' ';
+  // }, []);
 
   
 
@@ -40,21 +52,23 @@ function YourSmoothie({ingredients, handleClick}) {
       <div className="ui five column grid">
         <div className="row ingredient-list-row">
 
+          {ingredients.length !== 0 ?
           <div className="yours"><h1>My Smooth(e):</h1></div>
-            
+          : <div><h1>Pick What You Want from the 'Ingredients' Tab</h1></div>
+          }
           {
             ingredients.map(ingredient => (
               <IngredientCard key={ingredient.id} ingredient={ingredient} handleClick={handleClick}/>
             ))
           }    
       <div>
-
       </div>
       </div>
       </div>
       </div>
 
-
+        {ingredients.length !== 0 ?
+        <div>
     <input
       type="button"
       value="Make My Smoothie!"
@@ -65,16 +79,21 @@ function YourSmoothie({ingredients, handleClick}) {
     />
     {isOpen && <Popup
       content={<>
-        <img className="making-smoothie" src="./Images/smoothie.gif" loop={false}/>
+        <img className="making-smoothie" src="./Images/smoothie.gif" alt="smoothie"/>
         <h4>Your Smooth(e):</h4>
+        <h2>Ingredients: {totalNames}</h2>
         <h2>Price: ${totalPrice}</h2>
-        <h2>Calories: {totalCalories} Calories</h2>
-        <h2>Protein: {totalProtein}g of Protein</h2>
-        <h2>Fat: {totalFat}g of Fat</h2>
+        <h2>{totalCalories} Calories</h2>
+        <h2>{totalProtein}g of Protein</h2>
+        <h2>{totalFat}g of Fat</h2>
+        {/* <h2>Vitamins: {totalVitamins}</h2>
+        <h2>Minerals: {totalMinerals}</h2> */}
 
       </>}
       handleClose={togglePopup}
-    />}
+    />} 
+    </div>
+    : null}
           
       
     </div>

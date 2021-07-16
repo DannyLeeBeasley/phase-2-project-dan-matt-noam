@@ -10,8 +10,8 @@ function NavBar() {
    
   return (
     <nav>
+      <Link to="/ingredientlist">Ingredients </Link>
       <Link to="/yoursmoothie">Your Smoothie</Link>
-      <Link to="/ingredientlist">Your Ingredients </Link>
       <Link to="/about">About </Link>
     </nav>
   );

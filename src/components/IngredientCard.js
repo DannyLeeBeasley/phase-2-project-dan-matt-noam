@@ -1,6 +1,10 @@
 import React from "react";
 
 function IngredientCard({ ingredient, handleClick}) {
+
+  const vitamins = ingredient.vitamins + ' '
+  const minerals = ingredient.minerals + ' '
+  
   return (
     <div className="ui column">
       <div
@@ -12,8 +16,8 @@ function IngredientCard({ ingredient, handleClick}) {
             <div className="header">
             <h2>{ingredient.name}</h2>
           </div>
-        <div className="image" >
-          <img alt="image" src={ingredient.image} />
+        <div className="pic" >
+          <img alt="pic" src={ingredient.image} />
         </div>
         
         <div className="content">
@@ -31,11 +35,11 @@ function IngredientCard({ ingredient, handleClick}) {
         </div>
         <div className="extra content">
           <small>
-            Vitamins: {ingredient.vitamins}
+            Vitamins: {vitamins}
           </small>
           <br></br>
           <small>
-          Minerals: {ingredient.minerals}
+          Minerals: {minerals}
           </small>
 
      

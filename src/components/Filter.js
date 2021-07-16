@@ -13,7 +13,6 @@ function Filter({ onCategoryChange }) {
         <option value="sweeteners">Sweeteners</option>
         <option value="juices">Juices</option>
         <option value="powders/other">Powders/Other</option>
-
       </select>
     </div>
   );

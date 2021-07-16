@@ -21,21 +21,36 @@ body {
   margin-right: 1468px;
 }
 
+.toprow {
+  margin-top: 75px;
+}
+
 h5{
   margin-left: 5mm;
-  /* margin-right: 250mm; */
   font-style: bold;
-  font-size: xx-large;
+  font-size: 40px;
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   color: #082b34;
-  margin-right: 380mm;
+  /* padding-right: 390mm; */
+  text-align: left;
+  align-content: flex-end;
+  overflow-x: scroll;
+
+}
+
+.welcome{
+  margin-top: 25mm;
+}
+
+.head{
+  margin-top: 27mm;
 }
 
 h4{
   font-style: bold;
   font-size: xx-large;
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-  color: #52CEC8
+  color: #263221
 }
 
 p {
@@ -45,15 +60,22 @@ p {
   margin-bottom: 2mm;
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   padding-right: 250mm;
+}
 
+#wrapper {
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
 }
 
 header {
     overflow-x: scroll;
-    min-height: 430px;
-    max-height: 430px;
-    max-width: 100%;
-    min-width: 100%;
+    min-height: 670px;
+    max-height: 630px;
+    /* max-width: 100%;
+    min-width: 100%; */
+    /* width: fit-content; */
+    width: 100%;
     text-align: left;
     align-content: flex-end;
     background-size: 100%;
@@ -61,6 +83,8 @@ header {
     background-position: top;
     margin-top: 0mm;
     border-bottom: 10px solid #082b34;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .smoothies{
@@ -74,7 +98,7 @@ h6 {
   color: #378a78; 
   font-family: 'Rouge Script', cursive; 
   font-size: 90px; 
-  font-weight: normal; 
+  font-weight: bolder; 
   line-height: 100px; 
   text-shadow: 1px 1px 2px #082b34;
 }
@@ -108,8 +132,6 @@ h6 {
 }
 
 
-
-
 .column {
   float: left;
   /* width: 25%; */
@@ -119,7 +141,6 @@ h6 {
 h1 
 { 
   color: #467c50; 
-  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 
   font-size: 60px; 
@@ -134,10 +155,9 @@ h1
 
 .your-ingredients {
   background-size: 100%;
-  min-height: 100mm;
+  min-height: 142mm;
   background-image: linear-gradient(#DAE2ED, #ACD8F1);
   border-bottom: 10px solid #082b34;
-
 }
 
 h2 {
@@ -150,31 +170,22 @@ small {
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 
-/* button {
-  align-items: center;
-  font-size: larger;
-} */
-
 .make-smoothie{
-  display:inline-block;
   padding:0.3em 1.2em;
   margin:0 0.1em 0.1em 0;
   border:0.16em solid rgba(255,255,255,0);
   border-radius:2em;
   box-sizing: border-box;
-  text-decoration:none;
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   font-weight:300;
   color:#467c50;
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-  text-align:center;
   transition: all 0.2s;
-  align-items: center;
   margin-left: 20px;
   font-size: x-large;
   margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
+  position: flex;
+  bottom: 10px;
   }
 
   .make-smoothie:hover{
@@ -192,30 +203,31 @@ small {
   height: 100vh;
   top: 0;
   left: 0;
+  box-shadow: 10px 12px #353333;
+
 }
  
 .box {
   position: relative;
   width: 450px;
   margin: 0 auto;
-  height: 575px;
+  height: 650px;
   margin-top: calc(100vh - 85vh - 20px);
-  background: #263221;
+  background: #92AAC2;
   border-radius: 4px;
   padding: 20px;
   border: 1px solid #999;
   overflow: auto;
   align-items: center;
   text-align: center;
-  color: #52CEC8;
+  color: #263221;
+  box-shadow: 10px 12px #353333;
 }
  
 .close-icon {
   content: 'x';
   cursor: pointer;
   position: fixed;
-  /* right: calc(15% - 30px);
-  top: calc(100vh - 85vh - 33px); */
   background: #ededed;
   width: 25px;
   height: 25px;
@@ -230,6 +242,9 @@ small {
   width: 400px;
   height: 300px;
   align-items: center;
+  border-radius: 1px;
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
+  margin-bottom: 4mm;
 }
 
 .Filter {
@@ -237,58 +252,9 @@ small {
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
 
-
-/* body {
-  background-color: #434752;
-  background-image: linear-gradient(to right, #434752, #2a2d35, #2a2d35);
-}
-
-#shelf {
-  width: 400px;
-  height: 71px;
-  margin: 50px auto;
-  position: relative;
-}
-
-.top {
-  width: 336px;
-  height: 100px;
-  background: 7px 0 url(http://us.123rf.com/400wm/400/400/mettus/mettus1002/mettus100200138/6476266-motif-de-la-planche-de-bois-obsolete.jpg);
-  background-size: 88%;
-  position: absolute;
-  top: 0;
-  left: 32px;
-  transform: perspective(300px) rotateX(75deg);
-  box-shadow: inset 0 40px 130px -20px #16120d;
-}
-
-.front {
-  width: 400px;
-  height: 6px;
-  background: url(http://us.123rf.com/400wm/400/400/mettus/mettus1002/mettus100200138/6476266-motif-de-la-planche-de-bois-obsolete.jpg);
-  position: absolute;
-  bottom: 0;
-  box-shadow: inset 0 1px 1px 0 #776959, inset 0 -2px 20px -2px #16120D;
-}
-
-.shadow {
-  width: 395px;
-  height: 6px;
-  position: absolute;
-  bottom: 0;
-  left: 5px;
-  box-shadow: 0 10px 20px -2px black;
-} */
-
 img {
   height: 25mm;
   width: 25mm
-}
-
-#about {
-  background-color: lightblue;
-  height: 300px;
-  text-align: center;
 }
 
 * {
@@ -301,16 +267,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", serif;
-  margin-bottom: 1em;
-} */
 
 nav {
   position: fixed;
@@ -328,6 +284,9 @@ nav a {
   color: rgb(0, 63, 8);
   border-bottom: 2px solid rgb(0, 63, 8);
   transition: 0.1s;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+
 }
 
 nav a:hover,
@@ -343,8 +302,7 @@ nav a:active {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 50vh;
-  min-height: 400px;
+  min-height: 142mm;
   padding: 1rem;
   background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/11/smooth-02.jpg);
 }
@@ -360,5 +318,10 @@ nav a:active {
 
 select {
   font-size: x-large;
+  align-items: center;
+}
+
+.selectAll {
+  font-size: larger;
   align-items: center;
 }

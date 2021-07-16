@@ -3,7 +3,8 @@ import React from "react";
 function About() {
     return (
       <div id="about">
-        <h1>This App was made by Dan Matt and Noam for their Phase 2 Project,  Our goal is to bring you a delicious smooth(e) at the tips of your fingers, just order through your phone and your  healthy smooth(e) will be ready in minutes at a fair price.</h1>
+        <h1>This App was created by Dan, Matt and Noam for their Flatiron Phase 2 Project.</h1>
+        <h1>Our goal is to bring you a delicious smooth(e) at the tip of your fingers. Just place your custom smooth(e) order online or through your phone!</h1>
       </div>
     )
   }
